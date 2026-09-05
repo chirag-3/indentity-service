@@ -1,4 +1,6 @@
-This service will have following features or functionalities
+This application can be used as a user creation, authentication/authorization application for a B2C usecase
+
+This service will have the following features or functionalities
 
 1. user registration
 2. user password setting
@@ -9,4 +11,4 @@ This service will have following features or functionalities
    for a user
 7. Logout
 8. Stores (Creates/Modifies/Deletes/returns) user permissions.
-9. Have concept of super user and normal user- super user can give permissions to normal user
+9. Have concept of super-user and normal user : super-user can give permissions to normal user
