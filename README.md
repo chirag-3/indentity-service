@@ -34,7 +34,7 @@ resetTokenExpiry
 
 2. sessions table
 id - automatically generated and incremented pK
-userId - integer foreign Key from user table
+userId - integer foreign Key from user table (on delete cascade)
 HashAppToken - string uniqueIndexed app token
 expiryTime - time - indexed
 createdAt - time
@@ -43,7 +43,7 @@ Index on (userID, expiryTime)
 
 3. user_permissions
 id - automatically generated and increment pK
-userId - integer fk form user table
+userId - integer fk form user table (On delete cascade)
 permissionId - integer fK from permissions table (On delete cascade)
 createAt - time
 updateAt - time
@@ -54,3 +54,4 @@ id - automatically generated permission id
 permission - permission String representing the permission - Unique Index
 createdAt - time
 upodatedAt - time
+
