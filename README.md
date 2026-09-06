@@ -53,5 +53,20 @@ UniqueIndex on (userId, permissionId)
 id - automatically generated permission id
 permission - permission String representing the permission - Unique Index
 createdAt - time
-upodatedAt - time
+updatedAt - time
 
+
+APIs to be made
+1. /users POST API for user-creation (No auth required)
+When some user submits their data an email for password re-setting is sent to them
+2. /users/initiatePasswordReset POST (No auth Required) (Email in body)
+3. /users/performPasswordReset POST (password Reset Token must be sent in Bearer)
+4. /users/login POST (username and password sent in Basic Auth)
+5. /users/validate_auth_token POST (AuthToken sent in Bearer)
+6. /users/{permalink}/permissions PUT (Only Super User Has access and may authenticate via Basic Auth or Bearer)
+7. /users/{permalink}/permissions PATCH (Only Super User Has access and may authenticate via Basic Auth or Bearer)
+8. /users/{permalink}/permissions GET (Super User OR The user himself should be authorized to see)
+9. /permissions POST (Super User only)
+10. /permissions/{name} DELETE (Super User only)
+11. /users/logout POST (Bearer token must be sent)
+12. /users/{permalink}/status (Super User only send locked true/false in body)
