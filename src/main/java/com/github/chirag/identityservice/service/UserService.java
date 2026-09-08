@@ -5,7 +5,5 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface UserService {
-    public boolean isSuperUser(User user);
-
-    User createUser(User body);
+    User createUser(User body, User caller);
 }

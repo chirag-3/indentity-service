@@ -1,0 +1,11 @@
+package com.github.chirag.identityservice.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class UserDto {
+    private String email;
+    private String permalink;
+}
